@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditPetActivity"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        style="@style/text_view"
+        android:layout_width="119dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/layout_top_padding"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/layout_top_padding">
+
+        <TextView
+            android:id="@+id/Overview_text_view"
+            style="@style/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_top_padding"
+            android:text="@string/Overview" />
+
+        <TextView
+            android:id="@+id/Gender_text_view"
+            style="@style/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_long_margin"
+            android:text="@string/Gender" />
+
+        <TextView
+            android:id="@+id/Measurement_text_view"
+            style="@style/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_view_min_margin"
+            android:text="@string/Measurement" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/layout_top_padding">
+
+        <EditText
+            android:id="@+id/Overview1_edit_text_view"
+            style="@style/text_view"
+            android:autofillHints="@string/name"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/Overview2_edit_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_text_view_margin"
+            android:autofillHints="@string/breed"
+            android:ems="10"
+            android:hint="@string/breed"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:text="@string/breed"
+            android:textColorHint="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinner_menu_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_text_view_margin"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/Measurement_edit_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_text_view_margin"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+</LinearLayout>
